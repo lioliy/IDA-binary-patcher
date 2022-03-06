@@ -135,7 +135,7 @@ namespace BinPatcher
                 difFile = new StreamReader(textBoxDiffFileName.Text);
 
                 var str = difFile.ReadLine(); // title
-                if (!str.Contains("This difference file has been created by IDA"))
+                if (!str.Contains("This difference file was created by IDA"))
                 {
                     listViewStatus.Items.Add("Aborted: selected file is not a binary dif file");
                     if (targetFile != null)
